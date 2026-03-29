@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Camp Management System</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-heart-pulse"></i> HealthCamp
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="login.html" class="btn btn-secondary">Log In</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="container hero">
+            <div class="hero-content">
+                <h1>Streamline Health Camp Operations</h1>
+                <p>An intuitive platform designed to manage patients, coordinate doctor appointments, and enable seamless camp administration with real-time tracking.</p>
+                <div class="hero-actions">
+                    <a href="login.html" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> Get Started</a>
+                    <a href="#features" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1538108149393-cebb331ac715?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Health camp team" style="width: 100%; border-radius: 1rem; box-shadow: var(--shadow-lg);">
+            </div>
+        </section>
+
+        <section id="features" class="container" style="padding: 4rem 0;">
+            <div class="text-center mb-6">
+                <h2>Platform Features</h2>
+                <p class="mt-2 text-light">Comprehensive modules tailored for every stakeholder.</p>
+            </div>
+            
+            <div class="grid grid-cols-3" style="margin-top: 3rem;">
+                <div class="card text-center">
+                    <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;">
+                        <i class="fa-solid fa-hospital-user"></i>
+                    </div>
+                    <h3>Patient Module</h3>
+                    <p class="mt-2 text-light">Register quickly, book camp tokens, and view digital medical reports and prescriptions seamlessly.</p>
+                    <a href="patient.html" class="btn btn-secondary mt-4">View Patient Portal</a>
+                </div>
+                
+                <div class="card text-center">
+                    <div style="font-size: 2.5rem; color: var(--secondary); margin-bottom: 1rem;">
+                        <i class="fa-solid fa-user-doctor"></i>
+                    </div>
+                    <h3>Doctor Module</h3>
+                    <p class="mt-2 text-light">Manage your patient queue efficiently, enter diagnoses, and generate prescriptions with just three clicks.</p>
+                    <a href="doctor.html" class="btn btn-secondary mt-4">View Doctor Portal</a>
+                </div>
+                
+                <div class="card text-center">
+                    <div style="font-size: 2.5rem; color: #8b5cf6; margin-bottom: 1rem;">
+                        <i class="fa-solid fa-laptop-medical"></i>
+                    </div>
+                    <h3>Admin Module</h3>
+                    <p class="mt-2 text-light">Oversee camp performance, manage staff schedules, and view comprehensive reporting charts.</p>
+                    <a href="admin.html" class="btn btn-secondary mt-4">View Admin Portal</a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

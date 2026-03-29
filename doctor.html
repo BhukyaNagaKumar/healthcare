@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Portal - Health Camp</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-layout">
+        <aside class="sidebar">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-heart-pulse"></i> HealthCamp
+            </a>
+            <nav class="sidebar-nav">
+                <a href="#" class="sidebar-link active"><i class="fa-solid fa-users"></i> Patient Queue</a>
+                <a href="#" class="sidebar-link"><i class="fa-solid fa-stethoscope"></i> Consultations</a>
+                <a href="#" class="sidebar-link"><i class="fa-solid fa-pills"></i> Pharmacy Stock</a>
+                <a href="index.html" class="sidebar-link mt-6"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
+            </nav>
+        </aside>
+
+        <main class="dashboard-content">
+            <div class="page-header">
+                <div>
+                    <h2>Dr. Sarah Jenkins</h2>
+                    <p class="text-light">General Physician • Camp #HC-402</p>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="card" style="padding: 0.5rem 1rem; border-color: var(--primary);">
+                        <strong style="color: var(--primary);">Currently Serving: Token #41</strong>
+                    </div>
+                    <button class="btn btn-primary"><i class="fa-solid fa-forward-step"></i> Next Patient</button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4 mb-6">
+                <div class="card">
+                    <h3 class="mb-4">Waiting Queue</h3>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Token</th>
+                                    <th>Patient Name</th>
+                                    <th>Age/Sex</th>
+                                    <th>Chief Complaint</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="background-color: #f0fdf4;">
+                                    <td><strong>#42</strong></td>
+                                    <td>John Doe</td>
+                                    <td>34/M</td>
+                                    <td>Fever, Body Ache</td>
+                                    <td><button class="btn btn-secondary" style="padding: 0.25rem 0.75rem;">Call</button></td>
+                                </tr>
+                                <tr>
+                                    <td>#43</td>
+                                    <td>Emily Smith</td>
+                                    <td>28/F</td>
+                                    <td>Headache</td>
+                                    <td><button class="btn btn-secondary" style="padding: 0.25rem 0.75rem;" disabled>Wait</button></td>
+                                </tr>
+                                <tr>
+                                    <td>#44</td>
+                                    <td>Michael Brown</td>
+                                    <td>45/M</td>
+                                    <td>Cough</td>
+                                    <td><button class="btn btn-secondary" style="padding: 0.25rem 0.75rem;" disabled>Wait</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card" style="border-top: 4px solid var(--primary);">
+                    <h3 class="mb-4">Active Consultation: John Doe (Token #42)</h3>
+                    
+                    <form action="javascript:void(0);">
+                        <div class="form-group">
+                            <label class="form-label">Clinical Findings & Diagnosis</label>
+                            <textarea class="form-control" rows="3" placeholder="Enter findings..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Prescription (Rx)</label>
+                            <textarea class="form-control" rows="3" placeholder="e.g., Paracetamol 500mg, 1-0-1 x 3 days"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Advised Lab Tests</label>
+                            <input type="text" class="form-control" placeholder="e.g., CBC, Malaria Antigen">
+                        </div>
+                        
+                        <div class="flex gap-4 mt-4">
+                            <button type="submit" class="btn btn-primary"><i class="fa-solid fa-floppy-disk"></i> Save & Send to Pharmacy</button>
+                            <button type="button" class="btn btn-secondary"><i class="fa-solid fa-xmark"></i> Clear</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-4 gap-4">
+                <div class="card text-center">
+                    <h4 class="text-light">Total Seen</h4>
+                    <h2 class="mt-2" style="font-size: 2rem;">28</h2>
+                </div>
+                <div class="card text-center">
+                    <h4 class="text-light">Waiting</h4>
+                    <h2 class="mt-2" style="font-size: 2rem; color: var(--danger);">12</h2>
+                </div>
+                <div class="card text-center">
+                    <h4 class="text-light">Avg. Time</h4>
+                    <h2 class="mt-2" style="font-size: 2rem; color: var(--secondary);">6 min</h2>
+                </div>
+            </div>
+
+        </main>
+    </div>
+</body>
+</html>

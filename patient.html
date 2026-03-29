@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Portal - Health Camp</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-layout">
+        <aside class="sidebar">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-heart-pulse"></i> HealthCamp
+            </a>
+            <nav class="sidebar-nav">
+                <a href="#" class="sidebar-link active"><i class="fa-solid fa-border-all"></i> Dashboard</a>
+                <a href="#" class="sidebar-link"><i class="fa-solid fa-calendar-check"></i> Book Appointment</a>
+                <a href="#" class="sidebar-link"><i class="fa-solid fa-file-medical"></i> Medical Reports</a>
+                <a href="index.html" class="sidebar-link mt-6"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
+            </nav>
+        </aside>
+
+        <main class="dashboard-content">
+            <div class="page-header">
+                <div>
+                    <h2>Patient Dashboard</h2>
+                    <p class="text-light">Welcome back, John Doe</p>
+                </div>
+                <div class="flex items-center gap-4">
+                    <span class="badge badge-primary">Camp #HC-402 Active</span>
+                    <button class="btn btn-primary"><i class="fa-solid fa-plus"></i> New Booking</button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-3 mb-6">
+                <div class="card">
+                    <div class="flex justify-between items-center text-light mb-2">
+                        <h4>Current Token</h4>
+                        <i class="fa-solid fa-ticket"></i>
+                    </div>
+                    <h2 style="font-size: 2.5rem; color: var(--primary);">#42</h2>
+                    <p class="text-light mt-1 text-sm">Estimated wait: 15 mins</p>
+                </div>
+                
+                <div class="card">
+                    <div class="flex justify-between items-center text-light mb-2">
+                        <h4>Total Visits</h4>
+                        <i class="fa-solid fa-calendar-check"></i>
+                    </div>
+                    <h2 style="font-size: 2.5rem;">3</h2>
+                    <p class="text-light mt-1 text-sm">Last visit: Oct 12, 2025</p>
+                </div>
+
+                <div class="card">
+                    <div class="flex justify-between items-center text-light mb-2">
+                        <h4>Vitals</h4>
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <div class="flex gap-4 mt-2">
+                        <div>
+                            <span class="text-light">BP:</span> 120/80
+                        </div>
+                        <div>
+                            <span class="text-light">HR:</span> 72 bpm
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-6">
+                <h3 class="mb-4">Upcoming Appointments</h3>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Doctor</th>
+                                <th>Specialty</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Today, 10:30 AM</td>
+                                <td>Dr. Sarah Jenkins</td>
+                                <td>General Physician</td>
+                                <td><span class="badge badge-warning">Waiting</span></td>
+                                <td><button class="btn btn-secondary" style="padding: 0.25rem 0.75rem;">Cancel</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="mb-4">Recent Medical Reports</h3>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Diagnosis</th>
+                                <th>Doctor</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Oct 12, 2025</td>
+                                <td>Viral Fever</td>
+                                <td>Dr. Michael Chen</td>
+                                <td><button class="btn btn-secondary" style="padding: 0.25rem 0.75rem;"><i class="fa-solid fa-eye"></i> View</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

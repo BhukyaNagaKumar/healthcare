@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Portal - Health Camp</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-layout">
+        <aside class="sidebar">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-heart-pulse"></i> HealthCamp
+            </a>
+            <nav class="sidebar-nav">
+                <a href="#" class="sidebar-link active"><i class="fa-solid fa-chart-pie"></i> Camp Overview</a>
+                <a href="#" class="sidebar-link"><i class="fa-solid fa-user-tie"></i> Manage Staff</a>
+                <a href="#" class="sidebar-link"><i class="fa-solid fa-boxes-stacked"></i> Inventory</a>
+                <a href="#" class="sidebar-link"><i class="fa-solid fa-file-invoice"></i> Reporting</a>
+                <a href="index.html" class="sidebar-link mt-6"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
+            </nav>
+        </aside>
+
+        <main class="dashboard-content">
+            <div class="page-header">
+                <div>
+                    <h2>Camp Management Dashboard</h2>
+                    <p class="text-light">System Administrator View</p>
+                </div>
+                <div class="flex items-center gap-4">
+                    <button class="btn btn-secondary"><i class="fa-solid fa-download"></i> Export Reports</button>
+                    <button class="btn btn-primary"><i class="fa-solid fa-plus"></i> Schedule New Camp</button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-4 mb-6">
+                <div class="card text-center">
+                    <div style="color: var(--primary); font-size: 1.5rem;"><i class="fa-solid fa-hospital"></i></div>
+                    <h4 class="text-light mt-1">Active Camps</h4>
+                    <h2 class="mt-1" style="font-size: 2rem;">3</h2>
+                </div>
+                <div class="card text-center">
+                    <div style="color: var(--secondary); font-size: 1.5rem;"><i class="fa-solid fa-users"></i></div>
+                    <h4 class="text-light mt-1">Patients Handled</h4>
+                    <h2 class="mt-1" style="font-size: 2rem;">1,245</h2>
+                </div>
+                <div class="card text-center">
+                    <div style="color: #f59e0b; font-size: 1.5rem;"><i class="fa-solid fa-user-doctor"></i></div>
+                    <h4 class="text-light mt-1">Doctors on Duty</h4>
+                    <h2 class="mt-1" style="font-size: 2rem;">12</h2>
+                </div>
+                <div class="card text-center">
+                    <div style="color: var(--danger); font-size: 1.5rem;"><i class="fa-solid fa-kit-medical"></i></div>
+                    <h4 class="text-light mt-1">Pharmacy Stock</h4>
+                    <h2 class="mt-1" style="font-size: 2rem;">82%</h2>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4">
+                <div class="card">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3>Ongoing Health Camps</h3>
+                        <a href="#" style="color: var(--primary); font-size: 0.9rem;">View All</a>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Camp ID</th>
+                                    <th>Location</th>
+                                    <th>Capacity</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>#HC-401</strong></td>
+                                    <td>Southside Community Center</td>
+                                    <td>350/500</td>
+                                    <td><span class="badge badge-success">Active</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>#HC-402</strong></td>
+                                    <td>West End School</td>
+                                    <td>120/300</td>
+                                    <td><span class="badge badge-success">Active</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>#HC-403</strong></td>
+                                    <td>Downtown Plaza</td>
+                                    <td>0/400</td>
+                                    <td><span class="badge badge-warning">Starts Tomorrow</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3>Doctor Availability</h3>
+                        <button class="btn btn-secondary" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;"><i class="fa-solid fa-plus"></i> Add</button>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Doctor Name</th>
+                                    <th>Specialization</th>
+                                    <th>Assignment</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Dr. Sarah Jenkins</td>
+                                    <td>General Medicine</td>
+                                    <td>#HC-402</td>
+                                    <td><a href="#" style="color: var(--primary);">Manage</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Dr. Michael Chen</td>
+                                    <td>Pediatrics</td>
+                                    <td>#HC-401</td>
+                                    <td><a href="#" style="color: var(--primary);">Manage</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Dr. Emily Stark</td>
+                                    <td>Cardiology</td>
+                                    <td>--</td>
+                                    <td><a href="#" style="color: var(--primary);">Assign</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
